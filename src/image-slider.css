@@ -1,0 +1,107 @@
+.slide-down {
+  animation: slideDown 0.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0%;
+  }
+  100% {
+    opacity: 0%;
+    transform: translateY(100%);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0%;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 100%;
+  }
+}
+
+.image-carousel {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+
+.image-carousel .image-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.image-carousel .image-wrapper.slide-left {
+  transform: translateX(-100%);
+}
+
+.image-carousel .image-wrapper.slide-right {
+  transform: translateX(0);
+}
+
+.image-carousel .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-carousel .text-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+.image-carousel .text-wrapper h1 {
+  font-size: 18px;
+  font-family: 'Inder', sans-serif;
+}
+
+.image-carousel .text-wrapper .current-index {
+  font-family: 'Inder', sans-serif;
+}
+
+.image-carousel .text-wrapper .title {
+  font-family: 'InknutAntiqua', serif;
+  font-size: 50px;
+  width: 240px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-carousel .button-wrapper {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 1rem;
+}
+
+.image-carousel .button-wrapper button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.image-carousel .button-wrapper button img {
+  width: 80px;
+}
