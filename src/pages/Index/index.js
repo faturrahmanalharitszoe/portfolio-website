@@ -81,7 +81,7 @@ export default function Index() {
           <Slider {...settings} className="ml-[100px]">
             <div className="Inder w-fit">
               <img className="w-[300px] h-[350px] rounded-lg" src="/images/SMA.jpg" alt="Slide 1" />
-              <div className="mt-2">
+              <div className="w-[300px] mt-2">
                 <p className="InknutAntiqua text-[18px]">Secondary school</p>
                 <p>SMAN 2 Cibinong</p>
                 <p>Science</p>
@@ -90,7 +90,7 @@ export default function Index() {
             </div>
             <div className="Inder">
               <img className="w-[300px] h-[350px] rounded-lg" src="/images/Kuliah.jpg" alt="Slide 1" />
-              <div className="mt-2">
+              <div className="w-[300px] mt-2">
                 <p className="InknutAntiqua text-[18px]">University</p>
                 <p>Universitas Diponegoro</p>
                 <p>Computer Science</p>
@@ -99,7 +99,7 @@ export default function Index() {
             </div>
             <div className="w-fit">
               <img className="w-[300px] h-[350px] rounded-lg" src="/images/ex1.jpg" alt="Slide 1" />
-              <div className="mt-2">
+              <div className="w-[300px] mt-2">
                 <p className="InknutAntiqua text-[18px]">Front End Developer</p>
                 <p>UPT Perpustakaan dan
                   Undip Press Universitas
@@ -109,7 +109,7 @@ export default function Index() {
             </div>
             <div className="w-fit">
               <img className="w-[300px] h-[350px] rounded-lg" src="/images/ex2.jpeg" alt="Slide 1" />
-              <div className="mt-2">
+              <div className="w-[300px] mt-2">
                 <p className="InknutAntiqua text-[18px]">Machine Learning Cohort</p>
                 <p>Bangkit Academy</p>
                 <p>February 2023 - July 2023</p>
@@ -117,7 +117,7 @@ export default function Index() {
             </div>
             <div className="w-fit">
               <img className="w-[300px] h-[350px] rounded-lg" src="/images/ex3.png" alt="Slide 1" />
-              <div className="mt-2">
+              <div className="w-[300px] mt-2">
                 <p className="InknutAntiqua text-[18px]">Programmer</p>
                 <p>PT Pro Sistimatika Automasi (PROSIA)</p>
                 <p>February 2023 - July 2023</p>
