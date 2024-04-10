@@ -25,17 +25,23 @@ export default function Index() {
     slidesToShow: 3,
     slidesToScroll: 1,
   };
+
+  const handleAboutMeClick = () => {
+    const aboutMeSection = document.getElementById('about-me-section');
+    aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <Parallax pages={3.99}>
+    <Parallax pages={4}>
       {/* First Page */}
       <ParallaxLayer offset={0} speed={0.5}>
-        <div className="min-h-screen bg-[#F6E8E8]">
+        <div className="h-[150vh] bg-[#F6E8E8]">
           <div>
             <div className="grid grid-cols-3 justify-center p-4">
               <div></div>
               <div className="flex w-full justify-center items-center">
-                <div className="mr-[49px]">About Me</div>
-                <img src="/images/logo.png" alt="Logo" className="w-[91px] h-[91px]" />
+                <div className="mr-[49px]" onClick={handleAboutMeClick}>About Me</div>
+                <img onClick={handleAboutMeClick} src="/images/logo.png" alt="Logo" className="w-[91px] h-[91px]" />
                 <div className="ml-[49px]">Portfolio</div>
               </div>
               <div className="flex items-center ml-auto">
@@ -53,9 +59,9 @@ export default function Index() {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.99} speed={0.5}>
+      <ParallaxLayer offset={1} speed={0.5}>
         <div className="h-[150vh] bg-[#F8F1F1]">
-          <div className="min-h-screen relative bottom-[60px]">
+          <div id="about-me-section" className="min-h-screen relative bottom-[60px]">
             <ParallaxLayer offset={0.5} speed={0.5}>
               <div className="relative InknutAntiqua font-bold text-[260px] right-[20px]">About</div>
               <div className="relative InknutAntiqua font-bold text-[260px] bottom-[140px] ml-[740px]">Me</div>
@@ -69,8 +75,8 @@ export default function Index() {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.99} speed={0.5}>
-        <div className="h-[150vh] bg-[#F8F1F1]">
+      <ParallaxLayer offset={2} speed={0.5}>
+        <div className="h-[150vh] bg-[#F6E8E8]">
           <div className="InknutAntiqua font-normal text-[80px] ml-[100px]">Education & Experience</div>
           <Slider {...settings} className="ml-[100px]">
             <div className="Inder w-fit">
@@ -121,9 +127,9 @@ export default function Index() {
 
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2.99} speed={0.5}>
+      <ParallaxLayer offset={3} speed={0.5}>
         <div className="flex h-[150vh] bg-[#F8F1F1]">
-          <div>
+          <div className="mt-9">
             <ImageCarousel images={pics} title={title} />
           </div>
         </div>
