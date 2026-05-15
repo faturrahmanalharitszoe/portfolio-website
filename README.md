@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Faturrahman Alharitszoe — Premium Glassmorphism Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Portfolio Banner](public/images/readme_banner.png)
 
-## Available Scripts
+A high-performance, professional portfolio website built with **React**, featuring a modern **Glassmorphism UI** and **Dual-Mode Rendering Architecture**. This project is optimized for 60fps performance on all devices, including mobile and systems with integrated graphics.
 
-In the project directory, you can run:
+## 🚀 Key Features
 
-### `npm start`
+- **Dual-Mode Rendering Architecture**: 
+  - **Desktop**: Rich 3D Parallax experience using `@react-spring/parallax`.
+  - **Mobile**: High-performance Vertical Stack layout for maximum stability and speed.
+- **Ultra-Performance Optimization**: 
+  - Achieves solid 60fps by replacing expensive CSS filters with lightweight **Radial Gradients**.
+  - Tuned 4px backdrop-blur system for a premium look without the GPU overhead.
+  - Strict hardware acceleration using `translate3d` and isolated render layers.
+- **Interactive Glassmorphism UI**: 
+  - Dynamic hover effects and smooth transitions using **Framer Motion**.
+  - Custom-built glass cards with hardware-accelerated animations.
+- **Responsive Navigation**:
+  - Professional Contact Dropdown with integrated WhatsApp, LinkedIn, and Email links.
+  - Scroll-spy enabled smooth navigation between sections.
+- **Experience Slider**: 
+  - Adaptive carousel for professional journey visualization using `react-slick`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Framework**: [React.js](https://reactjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/) & [React Spring](https://www.react-spring.dev/)
+- **Components**: React Slick, FontAwesome 6
+- **Performance**: GPU-accelerated CSS, Radial Gradient Masking
 
-### `npm test`
+## 📦 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
 
-### `npm run build`
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/faturrahmanalharitszoe/portfolio-website.git
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📈 Performance Engineering
+This portfolio was specifically engineered to overcome the common performance bottlenecks of Glassmorphism. By utilizing "Deep Isolation" techniques (`contain: content`) and offloading heavy paint operations to the GPU, we've ensured that even mid-range mobile devices deliver a buttery-smooth experience.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Designed and Developed with ❤️ by **Faturrahman Alharitszoe**
